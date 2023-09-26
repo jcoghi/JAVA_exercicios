@@ -1,0 +1,44 @@
+* {
+    text-align: justify-all;
+}
+body {
+    background-image: url("https://blogdoiphone.com/wp-content/uploads/2022/09/wallpaper-iOS16_10.jpg");
+    background-size: cover;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    background-color: lightcoral;
+    opacity: 0.8;
+    font-size: 24px;
+}
+h2:hover{
+    text-align: center;
+
+}
+h2, p {
+    color: rgb(36,106,100);
+    border: 5px blueviolet;
+    cursor: cell;
+}
+p {
+    color: darkgoldenrod;
+}
+
+.webtext {
+    border:5px dashed green;
+}
+.active {
+    color: black;
+}
+#div1{
+    background: rgba(0,0,255,0.7);
+}
+#div1 p{
+    background: rgba(0,0,255,0.7);
+    text-align: right;
+}
+#div2 {
+    background: rgba(155,190,205,0.9);
+}

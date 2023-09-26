@@ -1,0 +1,4 @@
+Nome,Idade,Cidade,
+Ana,25,Sao Paulo,
+Bruno,32,Rio de Janeiro,
+Carla,28,Belo Horizonte,

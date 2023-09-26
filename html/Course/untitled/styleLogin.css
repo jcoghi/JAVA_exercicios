@@ -1,0 +1,25 @@
+li {
+    list-style: none;
+    display: inline-block;
+}
+/*
+.boxmodel {
+    border: 5px solid red;
+    display: inline-block;
+    padding: 5px 20px 5px 20px; top right bottom left
+    margin: 0px 30px;
+    width: 33px;
+    height: 55px;
+}
+*/
+
+p {
+    font-size: 20px;
+}
+/* EM -> element size
+   REM -> root element size
+   PX -> pixels size
+*/
+span {
+    font-size: 2em; /* 2 times container element size*/
+}

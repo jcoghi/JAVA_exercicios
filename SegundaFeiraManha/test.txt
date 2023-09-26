@@ -1,0 +1,4 @@
+Nome,Idade,Cidade,
+Ana,25,Sao Paulo,
+Rafael,20,Diameda,
+Thiago,30,Cidade Ademar,
