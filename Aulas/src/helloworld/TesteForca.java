@@ -6,16 +6,17 @@ import java.util.Scanner;
 
 public class TesteForca {
     public static void main(String[] args) {
-        String[] bancoDados = {"abacate", "mamão", "banana", "morango", "umbu"};
+        String resultado;
+        String[] bancoDados = {"mamão"};
         boolean ligado = true;
-        int contador = 0;
+        int contador;
         
         Scanner tc = new Scanner(System.in);
         Random gerador = new Random();
         
         String senha = bancoDados[gerador.nextInt(bancoDados.length)];
         String[] mostrador = new String[senha.length()];
-        String[] senhaVetor = senha.split("");
+        char[] senhaVetor = senha.toCharArray();
         
         int tentativa = senha.length();
         
@@ -23,27 +24,35 @@ public class TesteForca {
             mostrador[a] = "-";
         }
         
-        
         while (ligado) {
-            
+            resultado = "";
+            contador = 0;
             boolean encontrado = false;
             System.out.println(Arrays.toString(mostrador));
             System.out.println("Você tem " + tentativa + " tentativas");
             System.out.println("Entre com uma letra: ");
-            char entrada = tc.next().toUpperCase().charAt(0);
+            char entrada = tc.next().toLowerCase().charAt(0);
             
-            if (entrada < 65 || entrada > 90) {
+            if (entrada != 'ã' || entrada != 'á') {
+                if (entrada < 'a' || entrada > 'z') {
                 System.out.println("Entrada inválida");
+                }
             } else {
                 
-                for(String letra : senhaVetor) {
+                for(char letra : senhaVetor) {
                     
-                    if (letra.charAt(0) == entrada) {
-                        mostrador[contador] = letra;
-                        contador++;
+                    if (entrada == letra) {
+                        mostrador[contador] = String.valueOf(letra);
                         encontrado = true;
-                    } else {
-                    }
+                    } 
+                    resultado += mostrador[contador].toLowerCase();
+                    contador++;
+                }
+                
+                if (resultado.equals(senha)) {
+                    System.out.println("\n" + resultado + "\n VOCÊ GANHOU");
+                    
+                    ligado = false;
                 }
                 
                 if (!encontrado) {
