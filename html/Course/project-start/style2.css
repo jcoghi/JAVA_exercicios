@@ -1,0 +1,50 @@
+body {
+    width: 95%;
+    margin: 10px 10px;
+    background-color: darkgrey;
+}
+
+
+.green {
+    background: linear-gradient(to right, rgb(237, 249, 235), rgb(144, 238, 145));;
+    padding: 10px 5px;
+    color:rgba(0, 0, 0, 1.0);
+    font-size:1em;
+    font-family: Impact;
+    border-radius:4px;
+    display: flex;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.navbar-ul {
+    display: flex;
+    list-style: none;
+}
+
+.green > a {
+    list-style: none;
+        color: gray;
+}
+
+.piper {
+    padding: 0px 20px;
+}
+
+
+.link {
+    width: 15%;
+    list-style: none;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.link a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    height: 10rem;
+    background-color: lightgray;
+}

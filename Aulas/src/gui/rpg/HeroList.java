@@ -1,6 +1,6 @@
 package gui.rpg;
 
-import gui.rpg.herois.Herois;
+import TesteAula1106.Herois;
 import javax.swing.DefaultListModel;
 
 /**
